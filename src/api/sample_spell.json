@@ -1,0 +1,134 @@
+{
+    "_id" : ObjectId("5e92fb642127cbbd7181ad29"),
+    "props" : {
+        "status" : true,
+        "isHidden" : false,
+        "parallelProcess" : false,
+        "storeExecLog" : true,
+        "description" : "",
+        "displayName" : "Workflow Test 1",
+        "creationDate" : ISODate("2020-04-12T11:28:36.223Z"),
+        "modificationDate" : ISODate("2020-04-12T19:33:57.825Z")
+    },
+    "spellEntries" : [ 
+        {
+            "_id" : "561569ee0e795998127b23d7",
+            "type" : "actionEmail",
+            "props" : {
+                "to" : "vincent@besson.be",
+                "subject" : "Test spell entries",
+                "data" : "test spell 2"
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e695998127b23d6",
+            "type" : "eventDevice",
+            "props" : {
+                "deviceId" : "561569ee0e695998127b23d7",
+                "service" : {
+                    "serviceId" : "561569ee0e695998127b21d7",
+                    "type" : "Lightbulb",
+                    "cx" : "On",
+                    "operator" : "equal",
+                    "value" : true
+                }
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e795998127b23d6",
+            "type" : "eventTime",
+            "props" : {
+                "hour" : 15,
+                "min" : 46,
+                "wday" : "1,5,6,7",
+                "mday" : "13,14"
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e795998127b23d5",
+            "type" : "actionWait",
+            "props" : {
+                "duration" : 10
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e795998127b23b1",
+            "type" : "actionSms",
+            "props" : {
+                "message" : "this is the sound of sea",
+                "msisdn" : "+33671410110"
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e795998127b23d8",
+            "type" : "actionEmail",
+            "props" : {
+                "to" : "vincent@besson.be",
+                "subject" : "Test spell entries false",
+                "data" : "test spell 1"
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e795998127b23d8",
+            "type" : "actionWs",
+            "props" : {
+                "url" : "http://www.google.com"
+            },
+            "spellEntries" : []
+        }, 
+        {
+            "_id" : "561569ee0e795998127b23a9",
+            "type" : "loopIterator",
+            "props" : {
+                "counter" : 5
+            },
+            "spellEntries" : [ 
+                {
+                    "_id" : "561569ee0e795998127b23d8",
+                    "type" : "actionWs",
+                    "props" : {
+                        "url" : "http://www.google.com"
+                    },
+                    "spellEntries" : []
+                }, 
+                {
+                    "_id" : "561569ee0e795998127b23e1",
+                    "type" : "actionWait",
+                    "props" : {
+                        "duration" : 5
+                    },
+                    "spellEntries" : []
+                }, 
+                {
+                    "_id" : "561569ee0e795998127b23f1",
+                    "type" : "conditionTimeframe",
+                    "props" : {
+                        "start_min" : 5,
+                        "start_hour" : 15,
+                        "end_hour" : 23,
+                        "end_min" : 18,
+                        "wday" : "0,1,2,3,7"
+                    },
+                    "spellEntries" : [ 
+                        {
+                            "_id" : "561569ee0e795998127b24d8",
+                            "type" : "actionWs",
+                            "props" : {
+                                "url" : "http://www.goo122a223gle.com"
+                            },
+                            "spellEntries" : []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "__v" : 0,
+    "executionLog" : []
+}

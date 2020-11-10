@@ -1,0 +1,97 @@
+[
+	{
+		"rule":"1",
+		"device":{
+			"props":{
+				"nodeid":14
+			},
+			"commandclass":[{
+					"id":38,
+					"service":{
+						"name":"Lightbulb",
+						"optCx":[{
+							"name":"Brightness"
+						}
+						]
+					},
+					"values":[{ 
+							"props":{	
+						  	"node_id": 15,
+						  	"class_id": 38,
+						  	"type": "byte",
+						  	"instance": 1,
+						  	"index": 0
+							},
+							"service":{
+								"name":"Lightbulb",
+								"priority":2,
+								"optCx":[{
+									"name":"Brightness"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"rule":"2",
+		"device":{
+			"props":{
+				"nodeid":14
+			},
+			"commandclass":[{
+					"id":38,
+					"service":{
+						"name":"Lightbulb",
+						"priority":3,
+						"optCx":[{
+							"name":"Brightness"
+						}
+						]
+					},
+					"values":[]	
+				}
+			]
+		}
+	},
+	{
+		"rule":"5",
+		"device":{
+			"props":{
+				"nodeid":15
+			},
+			"commandclass":[{
+					"id":38,
+					"service":{
+						"name":"Lightbulb",
+						"optCx":[{
+							"name":"Brightness"
+						}
+						]
+					},
+					"values":[{ 
+							"props":{	
+						  	"node_id": 14,
+						  	"class_id": 38,
+						  	"type": "byte",
+						  	"instance": 1,
+						  	"index": 0
+							},
+							"service":{
+								"name":"Lightbulb",
+								"priority":4,
+								"optCx":[{
+									"name":"Brightness"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+]

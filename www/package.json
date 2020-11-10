@@ -1,0 +1,68 @@
+{
+    "name": "www",
+    "version": "1.0.3557",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "create": "webpack",
+        "start": "webpack-dev-server --open --history-api-fallback --env.patch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@material-ui/core": "^4.9.13",
+        "@material-ui/icons": "^4.9.1",
+        "@material-ui/lab": "^4.0.0-alpha.52",
+        "axios": "^0.19.2",
+        "check-types": "^11.1.2",
+        "clone": "^2.1.2",
+        "cronstrue": "^1.94.0",
+        "formik": "^2.1.4",
+        "formik-material-ui": "^2.0.0-beta.1",
+        "i18next": "^19.3.3",
+        "moment": "^2.25.3",
+        "mousetrap": "^1.6.5",
+        "notistack": "^0.9.11",
+        "react": "^16.13.0",
+        "react-blockly": "^5.0.0",
+        "react-bootstrap": "^1.0.0-beta.17",
+        "react-dom": "^16.13.0",
+        "react-hotkeys": "^2.0.0",
+        "react-i18next": "^11.3.4",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.1.2",
+        "redux": "^4.0.5",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "urql": "^1.9.4",
+        "yup": "^0.28.5"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties",
+            "@babel/plugin-transform-runtime",
+            "transform-export-extensions"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.7",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/preset-env": "^7.8.7",
+        "@babel/preset-react": "^7.8.3",
+        "babel-loader": "^8.0.6",
+        "copy-webpack-plugin": "^6.0.1",
+        "css-loader": "^3.4.2",
+        "file-loader": "^6.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^1.1.3",
+        "url-loader": "^4.1.0",
+        "webpack": "^4.42.0",
+        "webpack-auto-inject-version": "^1.2.2",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.11.0"
+    }
+}

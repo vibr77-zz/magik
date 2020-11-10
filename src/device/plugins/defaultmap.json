@@ -1,0 +1,124 @@
+[{
+	"rule": "1 - Generic Rules",
+	"device": {
+		"props": {},
+		"commandclass": [{
+				"id": 37,
+				"service": {
+					"priority": 10,
+					"name": "Outlet",
+					"optCx": []
+				},
+				"values": []
+			},
+			{
+				"id": 38,
+				"service": {
+					"priority": 10,
+					"name": "Lightbulb",
+					"optCx": [{
+						"name": "Brightness"
+					}]
+				}
+			},
+			{
+				"id": 48,
+				"service": {
+					"priority": 10,
+					"name": "MotionSensor",
+					"optCx": []
+				},
+				"values": []
+			},
+			{
+				"id": 49,
+				"values": [{
+						"props": {
+							"units": "lux"
+						},
+						"service": {
+							"priority": 10,
+							"name": "LightSensor",
+							"optCx": []
+						}
+					},
+					{
+						"props": {
+							"units": "F",
+							"label": "Temperature"
+						},
+						"service": {
+							"priority": 10,
+							"name": "TemperatureSensor",
+							"optCx": []
+						}
+					},
+					{
+						"props": {
+							"units": "C",
+							"label": "Temperature"
+						},
+						"service": {
+							"priority": 10,
+							"name": "TemperatureSensor",
+							"optCx": []
+						}
+					},
+					{
+						"props": {
+							"units": "%",
+							"label": "Relative Humidity"
+						},
+						"service": {
+							"priority": 10,
+							"name": "HumiditySensor",
+							"optCx": []
+						}
+					}
+				]
+			},
+			{
+				"id": 128,
+				"service": {
+					"priority": 10,
+					"name": "BatteryService",
+					"optCx": []
+				},
+				"values": []
+			},
+			{
+				"id": 50,
+				"values": [{
+					"props": {
+						"units": "W",
+						"instance": 1,
+						"index": 8
+					},
+					"service": {
+						"name": "PowerMeterService",
+						"priority": 10,
+						"optCx": [{
+								"name": "TotalPowerConsumption",
+								"value": {
+									"props": {
+										"units": "kWh"
+									}
+								}
+							},
+							{
+								"name": "PowerConsumptionResetCounter",
+								"priority": 10,
+								"value": {
+									"props": {
+										"label": "Reset",
+										"type": "button"
+									}
+								}
+							}
+						]
+					}
+				}]
+			}
+		]
+	}
+}]

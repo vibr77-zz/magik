@@ -1,0 +1,98 @@
+{
+	id:'561569ee0e795998127b23c6',
+	displayName:'Workflow text 2',
+	status:true,
+	parallel:false,
+	spellEntries:[
+		{
+			id:'561569ee0e795998127b0001',
+			type:'objectWait',
+			objDuration:5
+		}
+	]
+}
+
+
+
+
+
+{
+	displayName:'Workflow Test 1',
+	id:'561569ee0e795998127b23c6',
+	status:true,
+	parallel:false,
+	spellEntries:[
+		{
+			id:'561569ee0e795998127b23d7',
+			type:'actionEmail',
+			params:{
+				to:'vincent@besson.be',
+				subject:'Test spell entries',
+				data:'test spell 2'
+			}
+		},
+		{
+			id:'561569ee0e795998127b23d5',
+			type:'actionWait',
+			params:{
+				duration:10
+			}
+		},
+		{
+			id:'561569ee0e795998127b23b1',
+			type:'actionSms',
+			params:{
+				message:'this is the sound of sea',
+				msisdn:'+33671410110'
+			}
+		},
+		{
+			id:'561569ee0e795998127b23d8',
+			type:'actionmail',
+			params:{
+				to:'vincent@besson.be',
+				subject:'Test spell entries false',
+				data:'test spell 1'
+			}
+		},
+		{
+			id:'561569ee0e795998127b23d9',
+			type:'actionWs',
+			params:{
+				url:'http:\/\/www.google.com'
+			}
+		},
+		{
+			id:'561569ee0e795998127b23a9',
+			type:'loopIterator',
+			params:{
+				counter:5
+			},
+			spellEntries:[
+				{
+					id:'zz1569ee0e795998127b23b2',
+					type:'actionWs',
+					params:{
+						url:'http:\/\/www.google.com'
+					},
+				},
+				{
+					id:'561569ee0e795998127b23e1',
+					type:'actionWait',
+					params:{
+						duration:5
+					}
+				},
+				{
+					id:'qq1569ee0e795998127b23a9',
+					type:'contionTimeframe',
+					params:{
+						counter:5
+					},
+					spellEntries:[]
+				}		
+			]
+		},
+
+	]
+}

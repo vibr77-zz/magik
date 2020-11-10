@@ -1,0 +1,76 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "rule": {"type": "string"},
+        "device": {
+          "type": "object",
+          "properties": {
+            "props": {
+              "type": "object",
+              "properties": {
+                "nodeid": { "type": "integer"}
+              }
+            },
+            "commandclass": {
+              "type": "array",
+              "items": [{
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "integer" },
+                    "service": {
+                      "$id": "#service",
+                      "type": "object",
+                      "properties": {
+                        "name": { "type": "string" },
+                        "priority": {"type": "integer"},
+                        "optCx": {
+                          "type": "array",
+                          "items": [{
+                              "type": "object",
+                              "properties": {
+                                "name": { "type": "string"}
+                              },
+                              "required": ["name"]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [ "name","optCx"]
+                    },
+                    "values": {
+                      "type": "array",
+                      "items": [{
+                          "type": "object",
+                          "properties": {
+                            "props": {
+                              "type": "object",
+                              "properties": {
+                                "node_id": { "type": "integer" },
+                                "class_id": { "type": "integer" },
+                                "type": { "type": "string" },
+                                "instance": { "type": "integer" },
+                                "index": { "type": "integer" }
+                              }
+                            },
+                            "service": {"$ref": "#service"}
+                          },
+                          "required": [ "props","service"]
+                        }
+                      ]
+                    }
+                  },
+                  "required": ["id","values"]
+                }
+              ]
+            }
+          },
+          "required": ["commandclass"]
+        }
+      },
+      "required": ["rule","device"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+#blocklyDiv {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  padding-left:0px;
+  padding-right:10px;
+  padding-top:1px;
+  bottom: 0;
+  border: 0px solid;
+
+}
+.blocklyMainBackground {
+	stroke-width:0;
+}
